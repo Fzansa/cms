@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+media_folder: "assets/uploads" # Path for media uploads
+public_folder: "/assets/uploads"
+collections:
+  - name: "posts" # Name of the collection
+    label: "Posts"
+    folder: "_posts" # Directory for posts
+    create: true # Allow users to create new posts
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
