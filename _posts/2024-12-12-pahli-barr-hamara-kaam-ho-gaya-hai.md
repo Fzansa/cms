@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "Pahli Barr Hamara kaam ho gaya hai "
 ---
+
 **D﻿ekha aapne** 
 
 Y﻿e to kaafi shi hai yaar
