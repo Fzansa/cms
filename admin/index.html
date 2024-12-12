@@ -1,28 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Content Manager Change</title>
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/netlify-cms@2.10.192/dist/cms.min.css
-"
-      rel="stylesheet"
-    />
-    <script src="
-https://cdn.jsdelivr.net/npm/netlify-cms@2.10.192/dist/netlify-cms.min.js
-"></script>
-  </head>
-  <body>
-    <div id="cms"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (typeof CMS !== "undefined") {
-          CMS.init();
-        } else {
-          console.error("Netlify CMS is not defined.");
-        }
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Content Manager Change</title>
+  <!-- Netlify CMS Script and Stylesheet -->
+  <script src="https://cdn.jsdelivr.net/npm/netlify-cms@2.15.72/dist/netlify-cms.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/netlify-cms@2.15.72/dist/cms.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="cms"></div> <!-- Container for CMS -->
+  
+  <script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('DOM fully loaded');
+      
+      if (typeof CMS !== 'undefined') {
+        console.log('CMS is defined');
+        CMS.init();  // Initialize Netlify CMS
+      } else {
+        console.error('Netlify CMS is not loaded or defined');
+      }
+    });
+  </script>
+</body>
 </html>
