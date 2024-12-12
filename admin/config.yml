@@ -1,14 +1,16 @@
 backend:
-  name: github
-  repo: Fzansa/cms
-  branch: main
-media_folder: "assets/uploads" # Path for media uploads
+  name: git-gateway   # Use 'git-gateway' for GitHub access
+  repo: Fzansa/cms    # Replace with your GitHub username and repository name
+  branch: main        # Use 'main' or 'master' depending on your default branch
+
+media_folder: "assets/uploads"  # Path for media uploads
 public_folder: "/assets/uploads"
+
 collections:
-  - name: "posts" # Name of the collection
+  - name: "posts"     # Name of the collection
     label: "Posts"
-    folder: "_posts" # Directory for posts
-    create: true # Allow users to create new posts
+    folder: "_posts"  # Directory for posts
+    create: true      # Allow users to create new posts
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
