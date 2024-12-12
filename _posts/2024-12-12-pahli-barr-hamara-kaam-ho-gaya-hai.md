@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pahli Barr Hamara kaam ho gaya hai "
+title: Finally Ho gaya 😎
 ---
 
 **D﻿ekha aapne** 
