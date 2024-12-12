@@ -1,5 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Fzansa/cms
+  branch: main
 media_folder: "assets/uploads" # Path for media uploads
 public_folder: "/assets/uploads"
 collections:
